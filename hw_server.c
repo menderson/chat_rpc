@@ -55,7 +55,7 @@ char **func3_1_svc(void *a, struct svc_req *req) {
   }
 
   p = msg;
-  printf("Mendsagem de  <%s> enviada\n", nick);
+  printf("Mensagem de  <%s> enviada\n", nick);
   return (&p);
 }
 

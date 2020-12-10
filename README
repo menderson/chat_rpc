@@ -1,0 +1,57 @@
+Menderson N. Costa
+
+- Compilar
+
+     Para compilar:
+          $make
+
+     Para limpar(limpe tudo para o proximo avaliador não se perder na bagunça):
+          $make clean
+----------------------------
+- Modo de operar
+    Entre na pasta OCULTA .menderson: 
+         $cd .menderson/chat_rpc
+
+     Abra o servidor:
+          $./server
+
+     Em outro terminal abra um cliente:
+          $./client <nome do host> 
+      
+    exemplo: $./client ens1    
+
+    O cliente deve digitar seu nome, em seguida, o servidor lhe atribuira um id. 
+
+    Após isso, pode enviar mensagem, receber mensagem ou sair do chat.
+  
+    Os clientes devem solicitar o recebimento das mensagens
+
+
+-------------------------------
+
+- Arquivos para envio:
+
+    Nome dos arquivos já criados:
+        file1m.txt
+        file1k.txt
+
+----------------------------
+
+- Arquivos recebidos
+
+     - Nos clientes
+          Eles serão salvos em arquivos com o seguinte modelo:
+               <usuario que recebeu>-<id>.client
+
+
+     - No servidor
+          Eles serão salvos em arquivos com o seguinte modelo:
+               <usuario que enviou>-<id>.serv
+
+    <id> indica o número da ordem da mensagem.
+
+-----------------------
+- Comparar arquivos
+          
+    $diff <arquivo1> <arquivo2>
+
