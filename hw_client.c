@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
   int *ret_f4 = NULL;
 
   // Verificação dos parâmetros oriundos da console
-  if(argc != 3) {
+  if(argc != 2) {
     printf("ERRO: ./client <hostname>\n");
     exit(1);
   }
