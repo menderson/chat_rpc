@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
         fileREAD = fopen(fileName, "w");
         fputs(*ret_f3, fileREAD);
         fclose(fileREAD);
-        contador++;
+        ultima_msg_recebida++;
       }
     }
 
