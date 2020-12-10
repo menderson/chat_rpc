@@ -76,7 +76,7 @@ int main(int argc, char *argv[]) {
         // Salva o arquivo
         FILE *fileREAD;
         char fileName[256];
-        sprintf(fileName, "%s-%d.client", par_f1, contador);
+        sprintf(fileName, "%s-%d.client", par_f1, ultima_msg_recebida);
         fileREAD = fopen(fileName, "w");
         fputs(*ret_f3, fileREAD);
         fclose(fileREAD);
