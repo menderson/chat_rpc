@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
     int comando;
     printf("\n0-Enviar msg\n1-Receber as msgs\n2-Fechar\n\n");
     scanf("%d", &comando);
-    if(comando == 2) break;
+    if(comando == 2) exit(1);
 
     if(comando == 1) {
       // RECEBE A TAG DO ARQUIVO
